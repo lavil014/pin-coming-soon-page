@@ -61,22 +61,87 @@ main{
 form input {
   border-radius: 1rem;
   border: solid 0.01rem;
-  padding: 0.7rem 4rem;
+  width: 70%;
+  padding: 0.5rem 3rem;
 }
 
 form button {
   background-color: var(--Blue);
-  padding: 0.7rem 2rem;
-  border-radius: 1.5rem;
+  border-radius: 1.1rem;
   border: transparent;
   color: var(--White);
   cursor: pointer;
+  width: 35%;
+  font-size: 0.7rem;
+  font-weight: 600;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--PaleBlue);
 }
 
 .dasboard-container{
-  border: solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.dasboard-container img {
+  width: 50%;
 }
 
 footer{
-  border: solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer p{
+  color: var(--Gray) ;
+  font-size: 0.7rem;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+footer ul li i{
+  border: 0.01rem solid var(--Gray);
+  border-radius: 1rem;
+  padding: 0.3rem;
+  color: var(--Blue);
+}
+
+@media (width < 376px){
+
+  .header-container img{
+    width: 2.5rem;
+  }
+
+  .header-container .main-header{
+    font-size: 1.1rem;
+  }
+
+  .header-container .title{
+    font-size: 0.7rem;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input{
+    width: 100%;
+  }
+   form button{
+    width: 100%;
+    padding: 0.8rem 0;
+   }
+
+   .dasboard-container img{
+      width: 100%;
+   }
 }
