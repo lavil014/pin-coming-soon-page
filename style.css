@@ -134,7 +134,7 @@ footer ul li i{
   color: var(--Blue);
 }
 
-@media (width < 376px){
+@media (width <426px){
 
   .header-container img{
     width: 2.5rem;
