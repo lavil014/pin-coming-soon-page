@@ -21,10 +21,13 @@
     <img src="/images/logo.svg" alt="page-logo">
     <p class="main-header">We are launching <span>soon!</span></p>
     <p class="title">Subscribe and get notified</p>
-    <form action="">
+    <form  novalidate action="">
       <input type="email" placeholder="Your email address...">
       <button type="submit">Notify Me</button>
     </form>
+    <div class="error-container">
+      <span class="error-message">Please provide a valid address</span>
+    </div>
   </section>
   <section class="dasboard-container">
     <img src="/images/illustration-dashboard.png" alt="Picture of a dasboard">
@@ -37,6 +40,7 @@
     </ul>
     <p> &copy; Copyright Ping. All rights reserved.</p>
   </footer>
+  <script src="/script.js"></script>
 </main>
 </body>
 </html>

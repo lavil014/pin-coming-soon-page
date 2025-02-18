@@ -61,8 +61,28 @@ main{
 form input {
   border-radius: 1rem;
   border: solid 0.01rem;
-  width: 70%;
-  padding: 0.5rem 3rem;
+  width: 22rem;
+  padding: 0.5rem 1rem;
+}
+
+form span{
+  font-size: 0.5rem;
+  margin-top: -0.5rem;
+  color: var(--LightRed);
+}
+
+.error-container{
+  width: 25rem;
+}
+
+.error-message{
+  color: var(--LightRed);
+  font-size: 0.6rem;
+  display: none;
+}
+
+.error-input{
+  border: solid var(--LightRed) 0.01rem;
 }
 
 form button {
@@ -131,6 +151,7 @@ footer ul li i{
   form{
     display: flex;
     flex-direction: column;
+    gap: 4rem;
   }
 
   form input{
@@ -141,7 +162,21 @@ footer ul li i{
     padding: 0.8rem 0;
    }
 
+   .dasboard-container{
+    margin-top: 3rem; 
+   }
+
    .dasboard-container img{
-      width: 100%;
+      width: 140%;
+   }
+
+   .error-container{
+    width: 100%;
+    margin-top: -4.4rem;
+   }
+
+   .error-message{
+    font-size: 0.5rem;
+    margin-left: 2.5rem;
    }
 }
